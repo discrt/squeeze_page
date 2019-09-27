@@ -1,0 +1,90 @@
+@import 'modules/variables';
+@import 'modules/normal';
+@import 'modules/home';
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap";
+
+
+
+.display_1{
+    font-family: Poppins, roboto, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.p_1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+.label_2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+.button_text_2{
+    @include button_text_2;
+}
+.input_1{
+    @include button_text_2;
+    background: #E5E5E5;
+    padding: 22px 40px;
+    max-width: 400px;
+    width: 60%;
+    display: inline-block;
+}
+.button_primary{
+    @include button_text_2;
+    padding: 22px 44px;
+    background: $blue;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    &:hover{
+        background: transparentize($blue, 0.2);
+    }
+}
+
+.button_secondary{
+    @include button_text_1;
+    padding: 16px 32px;
+    background: $grey_3;
+    text-decoration: none;
+    outline: none;
+    color: $grey_1;
+    display: inline-block;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background: $grey_2;
+    }
+}
+.text_labels{
+    padding-top: $atom-32;
+    display: block;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+}
+.p_lib_heading{
+    display: inline-block;
+    padding: 48px 0;
+}
+.p-lib-components{
+    @include padding-32px;
+}

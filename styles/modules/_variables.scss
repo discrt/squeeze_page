@@ -1,0 +1,31 @@
+$navy: #001035;
+$blue: #0020F2;
+$grey_3: #F3F5F6;
+$grey_1: #91949F;
+$grey_2: #CECFD9;
+$black_1: #1E2638;
+$black_2: #38393E;
+$black_3: #38393E;
+
+$atom-32: 32px;
+
+
+@mixin padding-32px{
+    padding: $atom-32 0;
+}
+@mixin button_text_2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+@mixin button_text_1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+

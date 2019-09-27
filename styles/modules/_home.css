@@ -1,0 +1,16 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      287.32deg,
+      rgba(21, 21, 24, 0.7) 28.5%,
+      rgba(255, 255, 255, 0) 122.52%
+    ),
+    url(/img/hero_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content_header {
+  max-width: 960px;
+  color: white;
+}
