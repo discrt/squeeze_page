@@ -26,11 +26,14 @@
 }
 .input_1{
     @include button_text_2;
+    font-weight: 400;
     background: #E5E5E5;
     padding: 22px 40px;
-    max-width: 400px;
+    max-width: 600px;
     width: 60%;
     display: inline-block;
+    color: $black_3;
+    letter-spacing: 0.02em;
 }
 .button_primary{
     @include button_text_2;
@@ -112,5 +115,41 @@
     }
     .mobile_only{
         display: block;
+    }
+    .copyright_info{
+        span{
+            font-size: 8px;
+            color: $black_2;
+        }
+    }
+}
+@media screen and (max-width: 560px){
+    .mobile_only{
+        display: block;
+    }
+    .display_1{
+        font-size: 32px;
+        line-height: 38px
+    }
+    .p_1{
+        font-size: 14px;
+    }
+    .input_1{
+        font-size: 14px;
+        padding: 18px 18px;
+        width: 48%;
+    }
+    .button_primary, .button_secondary{
+        font-size: 14px;
+        padding: 18px 24px;
+    }
+    .email_capture_form{
+        flex-direction: column;
+        .email_input{
+            width: 100%;
+        }
+        .submit_email{
+            margin: 12px 0 0 0;
+        }
     }
 }

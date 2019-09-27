@@ -73,10 +73,24 @@
 }
 .email_capture_form .email_input {
   background: #38393E;
-  color: #38393E;
+  color: #F3F5F6;
 }
 .email_capture_form .submit_email {
   margin-left: 16px;
+}
+
+.copyright_info {
+  position: absolute;
+  bottom: 20px;
+}
+.copyright_info span {
+  color: #616771;
+  font-size: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 18px;
+  letter-spacing: 0.02em;
 }
 
 .display_1 {
@@ -118,11 +132,14 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.5;
+  font-weight: 400;
   background: #E5E5E5;
   padding: 22px 40px;
-  max-width: 400px;
+  max-width: 600px;
   width: 60%;
   display: inline-block;
+  color: #616771;
+  letter-spacing: 0.02em;
 }
 
 .button_primary {
@@ -225,6 +242,46 @@
 
   .mobile_only {
     display: block;
+  }
+
+  .copyright_info span {
+    font-size: 8px;
+    color: #38393E;
+  }
+}
+@media screen and (max-width: 560px) {
+  .mobile_only {
+    display: block;
+  }
+
+  .display_1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .p_1 {
+    font-size: 14px;
+  }
+
+  .input_1 {
+    font-size: 14px;
+    padding: 18px 18px;
+    width: 48%;
+  }
+
+  .button_primary, .button_secondary {
+    font-size: 14px;
+    padding: 18px 24px;
+  }
+
+  .email_capture_form {
+    flex-direction: column;
+  }
+  .email_capture_form .email_input {
+    width: 100%;
+  }
+  .email_capture_form .submit_email {
+    margin: 12px 0 0 0;
   }
 }
 .text_labels {

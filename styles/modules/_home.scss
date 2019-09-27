@@ -49,9 +49,23 @@
     display: flex;
     .email_input{
         background: $black_2;
-        color: $black_3;
+        color: $grey_3;
     }
     .submit_email{
         margin-left: 16px;
     }
+}
+.copyright_info{
+    position: absolute;
+    bottom: 20px;
+    span{
+        color: $black_3;
+        font-size: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+    }
+    
 }
